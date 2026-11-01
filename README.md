@@ -99,30 +99,36 @@ const samarSinghPatel = {
 
 <div align="center">
 
+<!-- BULLETPROOF SELF-HOSTED STATS CARDS (Zero downtime, perfectly matching Crystal Glass theme) -->
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
   <tr>
     <td align="center" width="50%">
-      <img src="https://github-readme-stats.vercel.app/api?username=Samar-019&show_icons=true&bg_color=00000000&border_color=38BDF8&title_color=38BDF8&text_color=E0E7FF&icon_color=00F2FE&hide_border=false" width="100%"/>
+      <img src="./stats.svg" width="100%" alt="Samar's GitHub Intelligence"/>
     </td>
     <td align="center" width="50%">
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Samar-019&background=00000000&border=38BDF8&stroke=A78BFA&ring=00F2FE&fire=38BDF8&currStreakNum=FFFFFF&sideNums=E0E7FF&currStreakLabel=38BDF8&sideLabels=A78BFA&dates=94A3B8" width="100%"/>
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Samar-019&background=00000000&border=38BDF8&stroke=A78BFA&ring=00F2FE&fire=38BDF8&currStreakNum=FFFFFF&sideNums=E0E7FF&currStreakLabel=38BDF8&sideLabels=A78BFA&dates=94A3B8" width="100%" alt="Samar's Streak Stats"/>
     </td>
   </tr>
   <tr>
     <td colspan="2" align="center">
       <br/>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Samar-019&layout=compact&bg_color=00000000&border_color=A78BFA&title_color=38BDF8&text_color=E0E7FF&hide_border=false" width="75%"/>
+      <img src="./languages.svg" width="85%" alt="Most Used Languages"/>
     </td>
   </tr>
 </table>
 
-<br/>
+</div>
 
-<!-- 🏆 CRYSTAL TROPHY BOARD -->
-<a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=Samar-019&theme=nord&no-frame=true&no-bg=true&margin-w=6" alt="Samar's Trophies" />
-</a>
+---
 
+### 🐍 Contribution Grid Stream
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Samar-019/Samar-019/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Samar-019/Samar-019/output/github-contribution-grid-snake.svg">
+    <img alt="Snake Eating Contributions" src="https://raw.githubusercontent.com/Samar-019/Samar-019/output/github-contribution-grid-snake.svg">
+  </picture>
 </div>
 
 ---

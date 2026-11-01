@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="110" viewBox="0 0 700 110" fill="none">
+  <defs>
+    <linearGradient id="langGlassBg" x1="0" y1="0" x2="700" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0b0f19" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#060814" stop-opacity="0.98"/>
+    </linearGradient>
+
+    <linearGradient id="langBorder" x1="0" y1="0" x2="700" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .title { font-family: 'Segoe UI', Ubuntu, Sans-Serif; font-weight: 700; font-size: 15px; fill: #38bdf8; }
+    .label { font-family: 'Segoe UI', Ubuntu, Sans-Serif; font-weight: 600; font-size: 13px; fill: #e2e8f0; }
+    .pct { font-family: 'Segoe UI', Ubuntu, Sans-Serif; font-weight: 500; font-size: 12px; fill: #94a3b8; }
+  </style>
+
+  <!-- Card Background -->
+  <rect x="1" y="1" width="698" height="108" rx="14" fill="url(#langGlassBg)" stroke="url(#langBorder)" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="25" y="32" class="title">Most Used Languages &amp; Core Architecture</text>
+
+  <!-- Progress Bar Base -->
+  <rect x="25" y="48" width="650" height="12" rx="6" fill="#1e293b"/>
+
+  <!-- JavaScript Bar (85%) -->
+  <rect x="25" y="48" width="552" height="12" rx="6" fill="#facc15"/>
+  <!-- CSS/Design (10%) -->
+  <rect x="580" y="48" width="65" height="12" rx="6" fill="#38bdf8"/>
+  <!-- Other (5%) -->
+  <rect x="647" y="48" width="28" height="12" rx="6" fill="#c084fc"/>
+
+  <!-- Legends -->
+  <g transform="translate(25, 86)">
+    <!-- JavaScript -->
+    <circle cx="5" cy="5" r="4" fill="#facc15"/>
+    <text x="16" y="9" class="label">JavaScript <tspan class="pct">85.0%</tspan></text>
+
+    <!-- CSS / Caustics -->
+    <circle cx="210" cy="5" r="4" fill="#38bdf8"/>
+    <text x="221" y="9" class="label">CSS &amp; Caustic UI <tspan class="pct">10.0%</tspan></text>
+
+    <!-- HTML / Node -->
+    <circle cx="430" cy="5" r="4" fill="#c084fc"/>
+    <text x="441" y="9" class="label">HTML &amp; Electron <tspan class="pct">5.0%</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195" fill="none">
+  <defs>
+    <!-- Background Glass Gradient -->
+    <linearGradient id="glassBg" x1="0" y1="0" x2="495" y2="195" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0b0f19" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#060814" stop-opacity="0.98"/>
+    </linearGradient>
+
+    <!-- Cyan to Magenta Border Gradient -->
+    <linearGradient id="neonBorder" x1="0" y1="0" x2="495" y2="195" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <!-- Circular Badge Gradient -->
+    <linearGradient id="badgeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+
+    <filter id="neonGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .title { font-family: 'Segoe UI', Ubuntu, Sans-Serif; font-weight: 700; font-size: 16px; fill: #38bdf8; }
+    .stat-label { font-family: 'Segoe UI', Ubuntu, Sans-Serif; font-weight: 500; font-size: 13px; fill: #94a3b8; }
+    .stat-val { font-family: 'Segoe UI', Ubuntu, Sans-Serif; font-weight: 700; font-size: 14px; fill: #f8fafc; }
+    .grade-text { font-family: 'Segoe UI', Ubuntu, Sans-Serif; font-weight: 900; font-size: 26px; fill: #ffffff; }
+    .rank-text { font-family: 'Segoe UI', Ubuntu, Sans-Serif; font-weight: 700; font-size: 10px; fill: #38bdf8; letter-spacing: 1px; }
+  </style>
+
+  <!-- Glass Card Background -->
+  <rect x="1" y="1" width="493" height="193" rx="14" fill="url(#glassBg)" stroke="url(#neonBorder)" stroke-width="1.5"/>
+
+  <!-- Card Title -->
+  <g transform="translate(25, 32)">
+    <circle cx="6" cy="6" r="4" fill="#00f2fe" filter="url(#neonGlow)"/>
+    <text x="18" y="10" class="title">Samar's GitHub Intelligence</text>
+  </g>
+
+  <!-- Stats Rows -->
+  <g transform="translate(25, 68)">
+    <!-- Row 1: Total Contributions -->
+    <circle cx="5" cy="5" r="3" fill="#38bdf8"/>
+    <text x="18" y="9" class="stat-label">Total Contributions:</text>
+    <text x="210" y="9" class="stat-val">45+ Contributions</text>
+
+    <!-- Row 2: Commits in Sonoglow -->
+    <g transform="translate(0, 28)">
+      <circle cx="5" cy="5" r="3" fill="#a855f7"/>
+      <text x="18" y="9" class="stat-label">Flagship Project:</text>
+      <text x="210" y="9" class="stat-val">Sonoglow (32+ Commits)</text>
+    </g>
+
+    <!-- Row 3: Public Repositories -->
+    <g transform="translate(0, 56)">
+      <circle cx="5" cy="5" r="3" fill="#38bdf8"/>
+      <text x="18" y="9" class="stat-label">Public Repositories:</text>
+      <text x="210" y="9" class="stat-val">2 Active Repos</text>
+    </g>
+
+    <!-- Row 4: Primary Stack -->
+    <g transform="translate(0, 84)">
+      <circle cx="5" cy="5" r="3" fill="#ec4899"/>
+      <text x="18" y="9" class="stat-label">Core Runtime:</text>
+      <text x="210" y="9" class="stat-val">Electron.js &amp; Node.js</text>
+    </g>
+  </g>
+
+  <!-- Right Side: Glowing A+ Circle Badge -->
+  <g transform="translate(415, 105)">
+    <circle cx="0" cy="0" r="40" fill="#060814" stroke="url(#badgeGrad)" stroke-width="3" filter="url(#neonGlow)"/>
+    <circle cx="0" cy="0" r="34" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.3"/>
+    <text x="0" y="7" text-anchor="middle" class="grade-text">A+</text>
+    <text x="0" y="21" text-anchor="middle" class="rank-text">TIER</text>
+  </g>
+</svg>
