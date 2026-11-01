@@ -6,9 +6,7 @@
 <br/><br/>
 
 <!-- ✨ DYNAMIC IRIDESCENT TYPING HUD -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=23&pause=1200&color=38BDF8&center=true&vCenter=true&random=false&width=680&lines=✦+Architect+of+Atmospheric+Desktop+Software+✦;✦+Creator+of+Sonoglow+•+Next-Gen+Windows+Audio+✦;✦+Specializing+in+Electron,+Realtime+Visuals+%26+Sound+✦;✦+Crafting+Software+That+Looks+Like+Liquid+Art+✦" alt="Typing HUD" />
-</a>
+<img src="./typing.svg" width="680" alt="Typing HUD" />
 
 <br/>
 
@@ -99,7 +97,6 @@ const samarSinghPatel = {
 
 <div align="center">
 
-<!-- BULLETPROOF SELF-HOSTED STATS CARDS (Zero downtime, perfectly matching Crystal Glass theme) -->
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
   <tr>
     <td align="center" width="50%">
