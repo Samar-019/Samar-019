@@ -12,10 +12,6 @@
 
 <!-- 🫧 GLASS PILL ACTION BADGES -->
 <p align="center">
-  <a href="https://github.com/Samar-019/sonoglow">
-    <img src="https://img.shields.io/badge/Project-Sonoglow-00F2FE?style=for-the-badge&logo=electron&logoColor=white&color=060814&labelColor=082f49" alt="Sonoglow"/>
-  </a>
-  &nbsp;
   <a href="mailto:i.axis.019@gmail.com">
     <img src="https://img.shields.io/badge/Email-Samar-A78BFA?style=for-the-badge&logo=gmail&logoColor=white&color=060814&labelColor=3b0764" alt="Email"/>
   </a>
@@ -28,41 +24,6 @@
 <!-- HOLOGRAPHIC LASER BEAM -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4300-a447-11eb-908a-139a6edaec5c.gif" width="100%" height="3px"/>
 
-</div>
-
----
-
-### 🚀 Flagship Project: Sonoglow
-
-<div align="center">
-  <table>
-    <tr>
-      <td width="100%" style="background: radial-gradient(circle at top left, #0d1b2a, #060814); border: 1.5px solid #38bdf8; border-radius: 18px; padding: 22px;">
-        <h3 align="center">
-          <a href="https://github.com/Samar-019/sonoglow">
-            <span style="color: #38bdf8; font-size: 24px; font-weight: 800;">⚡ Sonoglow — The Atmospheric Music Experience</span>
-          </a>
-        </h3>
-        <p align="center" style="color: #cbd5e1; font-size: 15px;">
-          <i>"Music that becomes part of your desktop — Atmospheric Windows music player with synchronized lyrics and dynamic visuals."</i>
-        </p>
-        <p align="center">
-          <img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square&logo=windows&logoColor=white" />
-          <img src="https://img.shields.io/badge/Engine-Electron%20%26%20Node.js-38bdf8?style=flat-square&logo=electron&logoColor=white" />
-          <img src="https://img.shields.io/badge/Audio-Synchronized%20Lyrics-ec4899?style=flat-square&logo=musicbrainz&logoColor=white" />
-          <img src="https://img.shields.io/badge/Visuals-Dynamic%20Reactive-a855f7?style=flat-square&logo=visualstudiocode&logoColor=white" />
-        </p>
-        <p align="center">
-          <a href="https://github.com/Samar-019/sonoglow">
-            <img src="https://img.shields.io/github/stars/Samar-019/sonoglow?style=social" alt="Stars" />
-          </a>
-          <a href="https://github.com/Samar-019/sonoglow/fork">
-            <img src="https://img.shields.io/github/forks/Samar-019/sonoglow?style=social" alt="Forks" />
-          </a>
-        </p>
-      </td>
-    </tr>
-  </table>
 </div>
 
 ---
