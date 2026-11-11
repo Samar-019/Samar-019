@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="160" height="160" fill="none">
+  <defs>
+    <!-- Background Radial Aura -->
+    <radialGradient id="auraGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#8b5cf6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#060814" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Liquid Inner Flow Gradient -->
+    <linearGradient id="liquidGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe">
+        <animate attributeName="stop-color" values="#00f2fe;#38bdf8;#c084fc;#ec4899;#00f2fe" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#6366f1">
+        <animate attributeName="stop-color" values="#6366f1;#a855f7;#3b82f6;#06b6d4;#6366f1" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#f43f5e">
+        <animate attributeName="stop-color" values="#f43f5e;#ec4899;#8b5cf6;#00f2fe;#f43f5e" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Glass Border Prismatic Stroke -->
+    <linearGradient id="glassBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="35%" stop-color="#38bdf8" stop-opacity="0.7"/>
+      <stop offset="70%" stop-color="#c084fc" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <!-- Glass Highlight Sheen -->
+    <linearGradient id="glassSheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
+    </linearGradient>
+
+    <!-- Inner Core Orb Gradient -->
+    <radialGradient id="coreOrb" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#38bdf8" stop-opacity="0.7"/>
+      <stop offset="80%" stop-color="#a855f7" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#060814" stop-opacity="0.9"/>
+    </radialGradient>
+
+    <!-- High-Fidelity Glow Filter -->
+    <filter id="liquidGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur1"/>
+      <feGaussianBlur stdDeviation="16" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Frosted Drop Blur -->
+    <filter id="frostBlur">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+  </defs>
+
+  <style>
+    .spin-slow {
+      transform-origin: 120px 120px;
+      animation: spin 18s linear infinite;
+    }
+    .spin-rev {
+      transform-origin: 120px 120px;
+      animation: spin-reverse 14s linear infinite;
+    }
+    .pulse-fluid {
+      transform-origin: 120px 120px;
+      animation: float-pulse 5s ease-in-out infinite alternate;
+    }
+    .liquid-wave {
+      animation: morph-wave 7s ease-in-out infinite alternate;
+    }
+    .sparkle {
+      animation: twinkle 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes spin-reverse {
+      from { transform: rotate(360deg); }
+      to { transform: rotate(0deg); }
+    }
+    @keyframes float-pulse {
+      0% { transform: scale(0.96) translateY(2px); }
+      100% { transform: scale(1.04) translateY(-4px); }
+    }
+    @keyframes twinkle {
+      0% { opacity: 0.3; transform: scale(0.8); }
+      50% { opacity: 1; transform: scale(1.2); }
+      100% { opacity: 0.4; transform: scale(0.9); }
+    }
+  </style>
+
+  <!-- Ambient Outer Glow -->
+  <circle cx="120" cy="120" r="105" fill="url(#auraGlow)"/>
+
+  <!-- Rotating Orbit Rings (Liquid Glass Ring 1) -->
+  <g class="spin-slow">
+    <ellipse cx="120" cy="120" rx="94" ry="46" fill="none" stroke="url(#glassBorder)" stroke-width="1.2" stroke-dasharray="14 120 40 80" opacity="0.6" filter="url(#liquidGlow)"/>
+    <circle cx="214" cy="120" r="3.5" fill="#00f2fe" filter="url(#liquidGlow)"/>
+  </g>
+
+  <!-- Rotating Orbit Rings (Liquid Glass Ring 2) -->
+  <g class="spin-rev">
+    <ellipse cx="120" cy="120" rx="46" ry="94" fill="none" stroke="url(#liquidGrad)" stroke-width="1.4" stroke-dasharray="30 90 20 60" opacity="0.55"/>
+    <circle cx="120" cy="26" r="3" fill="#ec4899" filter="url(#liquidGlow)"/>
+  </g>
+
+  <!-- Main Pulsing Liquid Glass Orb Container -->
+  <g class="pulse-fluid">
+
+    <!-- Deep Caustics Shadow Base -->
+    <circle cx="120" cy="120" r="64" fill="#04060e" stroke="#1e293b" stroke-width="1" opacity="0.85"/>
+
+    <!-- Dynamic Animated Liquid Blobs Inside Glass -->
+    <g filter="url(#liquidGlow)">
+      <!-- Morphing Blob 1 -->
+      <path fill="url(#liquidGrad)" opacity="0.85">
+        <animate attributeName="d" dur="7s" repeatCount="indefinite"
+          values="
+            M120,68 C148,68 174,90 174,120 C174,152 146,172 120,172 C92,172 66,150 66,120 C66,88 90,68 120,68 Z;
+            M120,64 C158,66 178,98 172,124 C166,156 138,176 112,174 C82,172 62,142 68,114 C74,84 92,62 120,64 Z;
+            M120,70 C144,62 176,84 176,118 C176,156 142,168 120,170 C94,172 64,154 64,120 C64,88 98,76 120,70 Z;
+            M120,68 C148,68 174,90 174,120 C174,152 146,172 120,172 C92,172 66,150 66,120 C66,88 90,68 120,68 Z
+          " />
+      </path>
+
+      <!-- Liquid Swirl Accent -->
+      <path fill="url(#coreOrb)" opacity="0.75">
+        <animate attributeName="d" dur="6s" repeatCount="indefinite"
+          values="
+            M120,82 C140,82 156,98 156,120 C156,142 138,158 120,158 C100,158 84,142 84,120 C84,98 100,82 120,82 Z;
+            M122,86 C146,80 160,104 154,126 C148,146 124,154 114,152 C94,150 82,132 86,112 C90,92 104,90 122,86 Z;
+            M120,82 C140,82 156,98 156,120 C156,142 138,158 120,158 C100,158 84,142 84,120 C84,98 100,82 120,82 Z
+          " />
+      </path>
+    </g>
+
+    <!-- Translucent Front Glass Lens -->
+    <circle cx="120" cy="120" r="64" fill="url(#glassSheen)" opacity="0.35"/>
+    <circle cx="120" cy="120" r="64" stroke="url(#glassBorder)" stroke-width="2.5" filter="url(#frostBlur)"/>
+    <circle cx="120" cy="120" r="64" stroke="url(#glassBorder)" stroke-width="1.5"/>
+
+    <!-- Curved Specular Light Reflection (Top-Left Liquid Glare) -->
+    <path d="M78,82 C90,70 106,64 124,65 C132,65 140,68 146,71 C138,76 128,78 116,79 C98,80 86,88 78,98 C76,92 76,87 78,82 Z" fill="#ffffff" opacity="0.75" filter="url(#frostBlur)"/>
+
+    <!-- Secondary Bottom Rim Caustic Glow -->
+    <path d="M96,168 C104,172 114,174 126,173 C138,172 148,168 154,162 C146,165 136,166 126,166 C114,166 104,163 96,158 C95,162 95,165 96,168 Z" fill="#38bdf8" opacity="0.6"/>
+
+    <!-- Liquid Drop Center Sparkle Core -->
+    <g transform="translate(120, 120)">
+      <!-- 4-Point Prismatic Star Sparkle -->
+      <path d="M0,-16 C1,-5 5,-1 16,0 C5,1 1,5 0,16 C-1,5 -5,1 -16,0 C-5,-1 -1,-5 0,-16 Z" fill="#ffffff" filter="url(#liquidGlow)">
+        <animateTransform attributeName="transform" type="rotate" values="0; 90; 180; 270; 360" dur="12s" repeatCount="indefinite"/>
+      </path>
+      <circle cx="0" cy="0" r="3.5" fill="#ffffff"/>
+    </g>
+  </g>
+
+  <!-- Floating Ambient Micro-Sparkles -->
+  <g class="sparkle" style="transform-origin: 50px 70px;">
+    <circle cx="50" cy="70" r="2" fill="#00f2fe" filter="url(#liquidGlow)"/>
+  </g>
+  <g class="sparkle" style="transform-origin: 190px 80px; animation-delay: 1.2s;">
+    <circle cx="190" cy="80" r="2.5" fill="#f43f5e" filter="url(#liquidGlow)"/>
+  </g>
+  <g class="sparkle" style="transform-origin: 180px 175px; animation-delay: 2s;">
+    <circle cx="180" cy="175" r="2" fill="#c084fc" filter="url(#liquidGlow)"/>
+  </g>
+  <g class="sparkle" style="transform-origin: 65px 165px; animation-delay: 0.7s;">
+    <circle cx="65" cy="165" r="1.8" fill="#38bdf8"/>
+  </g>
+</svg>

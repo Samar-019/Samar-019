@@ -1,5 +1,10 @@
 <div align="center">
 
+<!-- 🫧 LIQUID GLASS PRISMATIC ANIMATED ICON -->
+<p align="center">
+  <img src="./liquid-glass-icon.svg" width="160" height="160" alt="Liquid Glass Prism Icon" />
+</p>
+
 <!-- 🪐 CUSTOM HIGH-RESOLUTION COSMIC BANNER -->
 <img src="./banner.png" width="100%" alt="Samar Singh Patel Banner" style="border-radius: 16px;"/>
 
